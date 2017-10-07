@@ -178,7 +178,7 @@ footer .contentdiv {
 	}
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
 	#upper {
 		font-family: Helvetica;
 		font-size: 0.77rem;
