@@ -1,0 +1,244 @@
+html {
+	font-size: 18px;
+	font-family: Helvetica;
+	color: white;
+}
+
+.contentdiv {
+	width: 960px;
+}
+
+.logocontent {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: black;
+}
+
+.logocontent .contentdiv {
+	display: flex;
+	align-items: center;
+}
+
+.logocontent img {
+	height: 1.5rem;
+	margin-left: 0.5rem;
+	margin-right: 1rem;
+}
+
+.logocontent p {
+	margin-top: 0.66rem;
+	margin-bottom: 0.66rem;
+}
+
+.mainbanner {
+	background-image: url('../images/moto.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25rem;
+	display: flex;
+	justify-content: center;
+}
+
+.bannerdiv {
+	width: 20rem;
+	margin-top: 9rem;
+	background-color: black;
+	padding: 2rem 0 2rem 3rem;
+}
+
+
+#upper {
+	font-weight: bold;
+	margin-bottom: 0.25rem;
+}
+
+#lower {
+	font-size: 2rem;
+	font-weight: bold
+}
+
+.widescreen, .narrowscreen {
+	background-color: firebrick;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	display: flex;
+	justify-content: center;
+}
+
+.widescreen .contentdiv, .narrowscreen .contentdiv {
+	display: flex;
+	justify-content: space-between;
+}
+
+.widescreen a, .narrowscreen a {
+	color: white;
+	text-decoration: none;
+}
+
+.narrowscreen {
+	display: none;
+}
+
+.contentcontainer {
+	display: flex;
+	justify-content: center;
+}
+
+.uppercontent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.watch, .pen, .glasses {
+	background-color: black;
+	width: 30%;
+	border: solid 4px black;
+}
+
+.imgcontainer {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+ .imgcontainer img {
+	max-height: 9rem;
+}
+
+.imgcontainer {
+	overflow: ;
+	padding: 2rem 0 2rem 0;
+}
+
+.watch p, .pen p, .glasses p {
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0 1rem 0;
+}
+
+.contentcontainer .contentdiv {
+	margin: 3rem 0 4rem 0;
+}
+
+.lowercontent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.textbox {
+	width: 35%;
+	margin: 3rem 0 4rem 0;
+}
+
+.text {
+	background-color: black;
+	padding: 1rem 0 1rem 2rem;
+}
+
+.numbers {
+	color: black;
+	background-color: white;
+}
+
+footer {	
+	font-size: 18px;
+	height: 5rem;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+footer .contentdiv {
+	display: flex;
+	align-items: center;
+}
+
+/*					QUERIES					*/
+
+@media only screen and (max-width: 1024px){
+	
+	.glasses {
+		display: none;
+	}
+	.watch, .pen {
+		width: 47%;
+	}
+	.widescreen {
+		display: none;
+	}
+
+	.narrowscreen {
+		display: flex;
+	}
+
+	.narrowscreen .contentdiv {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	#upper {
+		font-family: Helvetica;
+		font-size: 0.77rem;
+		font-weight: bold;
+	}
+	#lower {
+		font-family: Helvetica;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.mainbanner {
+		height: 15rem;
+	}
+	.narrowscreen .contentdiv {
+		display: flex;
+		justify-content: center;
+	}
+
+	.bannerdiv {
+		width: 100%;
+		margin-top: 10rem;
+		padding: 1rem 0 1rem 2rem;
+	}
+	.widescreen {
+		display: none;
+	}
+	.watch {
+		display: none;
+	}
+	.pen {
+		width: 90%;
+	}
+	.lowercontent {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.textbox {
+		width: 90%;
+		margin: ;
+	}
+	.uppercontent {
+		justify-content: center;
+	}
+
+	footer .contentdiv {
+		justify-content: center;
+	}
+
+	#uppertextbox {
+		margin: 3rem 0 0.5rem 0;
+	}
+	#lowertextbox {
+		margin: 0.5rem 0 4rem 0;
+	}
+
+
+}
+
+/* 					DEBUG					
+div {
+	border: solid 1px;
+}*/
