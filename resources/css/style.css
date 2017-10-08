@@ -100,14 +100,19 @@ html {
 	background-color: white;
 	display: flex;
 	justify-content: center;
+	height: 9rem;
 }
 
  .imgcontainer img {
-	max-height: 9rem;
+	height: 9rem;
+}
+#glasses img {
+	margin-top: 3rem;
+	height: 4rem;
 }
 
 .imgcontainer {
-	overflow: ;
+	
 	padding: 2rem 0 2rem 0;
 }
 
